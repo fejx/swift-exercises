@@ -24,6 +24,13 @@ Target: x86_64-unknown-linux-gnu
 
 ## How to build & run
 
+### With Makefiles
+
+```shell
+$ cd ex02
+$ make run
+```
+
 ### For single files
 
 ```shell
