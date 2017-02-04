@@ -14,3 +14,15 @@ func process(_ i: Int?) {
 
     print("Processing \(i)")
 }
+
+func abs(_ number: Int?) -> Int? {
+    guard let number = number else {
+        return nil
+    }
+
+    if (number < 0) {
+        return -number
+    } else {
+        return number
+    }
+}
