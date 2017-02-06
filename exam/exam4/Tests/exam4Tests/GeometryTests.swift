@@ -13,10 +13,10 @@ import XCTest
 class GeometryTests: XCTestCase {
 
     func testAspectRatio() {
-        let rect1 = Rect(x: 10, y: 10, width: 30, height: 20)
+        let rect1 = CGRect(x: 10, y: 10, width: 30, height: 20)
         XCTAssertEqual(rect1.aspectRatio, 1.5)
         
-        let rect2 = Rect(x: 0, y: 0, width: 0, height: 0)
+        let rect2 = CGRect(x: 0, y: 0, width: 0, height: 0)
         XCTAssertTrue(rect2.aspectRatio.isNaN)
     }
 
