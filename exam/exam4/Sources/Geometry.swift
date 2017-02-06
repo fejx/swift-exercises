@@ -8,3 +8,10 @@
 
 import Foundation
 
+extension CGRect {
+    var aspectRatio: Double {
+        get {
+            return Double(width) / Double(height)
+        }
+    }
+}
