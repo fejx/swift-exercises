@@ -25,8 +25,9 @@ final class ReferenceType {
     }
     
     func captureSelf() {
-        closure = {
-            self.foo()
+        // closure has to capture self weakly to avoid a strong reference circle
+        closure = { [weak self]
+            self?.foo()
         }
     }
     
