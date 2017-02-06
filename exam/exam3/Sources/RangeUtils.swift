@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+func combinedLength (of ranges: [NSRange]) -> Int {
+    return ranges.reduce(0) { length, range in
+        length + range.length
+    }
+}
